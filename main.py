@@ -1,8 +1,10 @@
 # import flast module
 from flask import Flask,jsonify
+from flask_cors import CORS
 
 # instance of flask application
 app = Flask(__name__)
+CORS(app)
 
 # home route that returns below text when root url is accessed
 @app.route("/")
